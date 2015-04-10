@@ -21,7 +21,11 @@ $JFRAME_SETTINGS = [
 	'path-lib'		=> 'script/lib/',
 	'path-headers'	=> 'script/headers/',
 	'path-pages'	=> 'script/pages/',
+	'path-partials'	=> 'script/partials/',
 	'path-footers'	=> 'script/footers/',
+
+	'page-default'	=> 'index',
+	'page-error'	=> 'error',
 
 	'timezone'		=> '__TIMEZONE__',
 	'debug'			=> true,
