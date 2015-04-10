@@ -2,10 +2,10 @@
 
 $JFRAME_SETTINGS = [
 
-	'mysql-host'	=> 'localhos',
-	'mysql-user'	=> 'test',
-	'mysql-pass'	=> 'test',
-	'mysql-db'		=> 'test',
+	'mysql-host'	=> 'localhost',
+	'mysql-user'	=> 'jframedemo',
+	'mysql-pass'	=> 'jframedemo',
+	'mysql-db'		=> 'jframedemo',
 
 	'path'			=> dirname( __FILE__ ).'/',
 	'path-css'		=> 'public/assets/css/',
