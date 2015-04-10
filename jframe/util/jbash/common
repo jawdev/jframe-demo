@@ -1,0 +1,22 @@
+#!/bin/bash
+# namespaced as: JBASH_
+
+JBASH_dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+source $JBASH_dir/format
+source $JBASH_dir/io
+
+JBASH_begin () {
+	echo $JBASH_FORMAT_separator
+}
+
+JBASH_end () {
+	echo $JBASH_FORMAT_separator
+	echo
+}
+
+JBASH_quit () {
+	JBASH_end
+	code=$1
+	if [ -z "$status" ]; then code=0; fi
+	exit $code
+}

@@ -1,0 +1,45 @@
+#!/bin/bash
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+source $DIR/jbash/common
+JBASH_begin
+
+# check to make sure user is in root
+
+if [ "$EUID" -ne 0 ]; then
+	JBASH_IO_fatal "This util must be run as root"
+fi
+
+JBASH_IO_info "updating packages ..."
+JBASH_IO_code "apt-get update"
+apt-get update
+# mysql
+JBASH_IO_ask "Install MySQL? [y/N]"
+read response
+if JBASH_IO_saidyes $response; then
+	JBASH_IO_info "installing mysql ..."
+	JBASH_IO_code "apt-get -y install mysql-server mysql-client"
+	apt-get -y install mysql-server mysql-client
+else JBASH_IO_note "skipping installation of MySQL"
+fi
+# apache
+JBASH_IO_ask "Install Apache? [y/N]"
+read response
+if JBASH_IO_saidyes $response; then
+	JBASH_IO_info "installing apache ..."
+	JBASH_IO_code "apt-get -y install apache2"
+	apt-get -y install apache2
+else JBASH_IO_note "skipping installation of Apache"
+fi
+# php5
+JBASH_IO_ask "Install PHP5? [y/N]"
+read response
+if JBASH_IO_saidyes $response; then
+	JBASH_IO_info "installing php ..."
+	JBASH_IO_code "apt-get -y install php5 php5-mysql libapache2-mod-php5"
+	apt-get -y install php5 php5-mysql libapache2-mod-php5
+else JBASH_IO_note "skipping installation of PHP"
+fi
+
+
+
+JBASH_end
