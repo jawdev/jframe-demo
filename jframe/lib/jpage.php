@@ -22,7 +22,7 @@ class JPage {
 	//! Add a CSS file
 	public static function addCss( $name ) {
 		if( isset( self::$css[$name] ) ) return;
-		else if( false && !file_exists( JFRAME_PATH_LOCAL_CSS.$name.'.css' ) ) JDebug::warn( "CSS file could not be found: ".JFRAME_PATH_LOCAL_CSS.$name.'.css' );
+		else if( !file_exists( JFRAME_PATH_LOCAL_CSS.$name.'.css' ) ) JDebug::warn( "CSS file could not be found: ".JFRAME_PATH_LOCAL_CSS.$name.'.css' );
 		else self::$css[$name] = true;
 	}
 

@@ -6,8 +6,6 @@
 * /script/headers/default.php
 ******************************************************************************/
 
-JPage::addCss( 'main' );
-
 ?><!DOCTYPE html>
 <html>
 <head>
