@@ -1,0 +1,3 @@
+[submodule "jframe"]
+	path = jframe
+	url = git@github.com:jawdev/jframe.git
