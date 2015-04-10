@@ -1,0 +1,97 @@
+\hypertarget{classJPage}{\section{J\-Page Class Reference}
+\label{classJPage}\index{J\-Page@{J\-Page}}
+}
+
+
+Static interface for the current page output.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classJPage_a830a3d38ee75a9c42c5f14d6c5853174}{static \hyperlink{classJPage_a830a3d38ee75a9c42c5f14d6c5853174}{add\-Css} (\$name)}\label{classJPage_a830a3d38ee75a9c42c5f14d6c5853174}
+
+\begin{DoxyCompactList}\small\item\em Add a C\-S\-S file. \end{DoxyCompactList}\item 
+\hypertarget{classJPage_a53f245f368acaf09896a3307f0bed863}{static \hyperlink{classJPage_a53f245f368acaf09896a3307f0bed863}{add\-Js} (\$name)}\label{classJPage_a53f245f368acaf09896a3307f0bed863}
+
+\begin{DoxyCompactList}\small\item\em Add a J\-S file. \end{DoxyCompactList}\item 
+\hypertarget{classJPage_a36a0da1c623f621c8a49129ceb697bdb}{static \hyperlink{classJPage_a36a0da1c623f621c8a49129ceb697bdb}{add\-Css\-Js} (\$name)}\label{classJPage_a36a0da1c623f621c8a49129ceb697bdb}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJPage_a830a3d38ee75a9c42c5f14d6c5853174}{add\-Css()} and \hyperlink{classJPage_a53f245f368acaf09896a3307f0bed863}{add\-Js()} combined \end{DoxyCompactList}\item 
+static \hyperlink{classJPage_a4afc4f7b229e35977c4f9908b8363dcc}{build\-Css} (\$prefix=\char`\"{}\textbackslash{}t\char`\"{})
+\begin{DoxyCompactList}\small\item\em Build C\-S\-S links. \end{DoxyCompactList}\item 
+static \hyperlink{classJPage_ab87eaf4dc5fd15dd14e3b9d35734a7f4}{build\-Js} (\$prefix=\char`\"{}\textbackslash{}t\char`\"{})
+\begin{DoxyCompactList}\small\item\em Build J\-S scripts. \end{DoxyCompactList}\item 
+\hypertarget{classJPage_aadd9f59c4a932e23d1299250921e1991}{static \hyperlink{classJPage_aadd9f59c4a932e23d1299250921e1991}{build\-Css\-Js} (\$prefix=\char`\"{}\textbackslash{}t\char`\"{})}\label{classJPage_aadd9f59c4a932e23d1299250921e1991}
+
+\begin{DoxyCompactList}\small\item\em Concatenate both \hyperlink{classJPage_a4afc4f7b229e35977c4f9908b8363dcc}{build\-Css()} and \hyperlink{classJPage_ab87eaf4dc5fd15dd14e3b9d35734a7f4}{build\-Js()} \end{DoxyCompactList}\item 
+\hypertarget{classJPage_a4222bb1bfbf059a954ace68854e9915c}{static \hyperlink{classJPage_a4222bb1bfbf059a954ace68854e9915c}{load\-Header} (\$header\-\_\-path=\char`\"{}default\char`\"{})}\label{classJPage_a4222bb1bfbf059a954ace68854e9915c}
+
+\begin{DoxyCompactList}\small\item\em Load a header file. \end{DoxyCompactList}\item 
+\hypertarget{classJPage_a2797b77b5a08c35681a6e4137760dc65}{static \hyperlink{classJPage_a2797b77b5a08c35681a6e4137760dc65}{load\-Header\-Footer} (\$path=\char`\"{}default\char`\"{})}\label{classJPage_a2797b77b5a08c35681a6e4137760dc65}
+
+\begin{DoxyCompactList}\small\item\em Load a header and footer file. \end{DoxyCompactList}\item 
+\hypertarget{classJPage_a8a8c3ecb665ff045c25600f1faeaa658}{static \hyperlink{classJPage_a8a8c3ecb665ff045c25600f1faeaa658}{load\-Page} (\$page\-\_\-path)}\label{classJPage_a8a8c3ecb665ff045c25600f1faeaa658}
+
+\begin{DoxyCompactList}\small\item\em Load a page file, called by J\-Router\-::route() \end{DoxyCompactList}\item 
+\hypertarget{classJPage_a0d07b595065a5d71873e261f0d2c3049}{static \hyperlink{classJPage_a0d07b595065a5d71873e261f0d2c3049}{load\-Footer} (\$footer\-\_\-path=\char`\"{}default\char`\"{})}\label{classJPage_a0d07b595065a5d71873e261f0d2c3049}
+
+\begin{DoxyCompactList}\small\item\em Load a footer file. \end{DoxyCompactList}\item 
+\hypertarget{classJPage_a77aeca7b3fc83a62b1f91f2aa01db8af}{static \hyperlink{classJPage_a77aeca7b3fc83a62b1f91f2aa01db8af}{append\-Page} (\$page\-\_\-path)}\label{classJPage_a77aeca7b3fc83a62b1f91f2aa01db8af}
+
+\begin{DoxyCompactList}\small\item\em Append a page file. \end{DoxyCompactList}\item 
+\hypertarget{classJPage_a24ab84658c27b0cc0a024c1001985a01}{static \hyperlink{classJPage_a24ab84658c27b0cc0a024c1001985a01}{append\-Partial} (\$partial\-\_\-path)}\label{classJPage_a24ab84658c27b0cc0a024c1001985a01}
+
+\begin{DoxyCompactList}\small\item\em Append a partial file. \end{DoxyCompactList}\item 
+\hypertarget{classJPage_afb7fd075a339da588edb10e4e7e32bfb}{static \hyperlink{classJPage_afb7fd075a339da588edb10e4e7e32bfb}{output} ()}\label{classJPage_afb7fd075a339da588edb10e4e7e32bfb}
+
+\begin{DoxyCompactList}\small\item\em Stream and output all loaded files, called by /jframe.php. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static interface for the current page output. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classJPage_a4afc4f7b229e35977c4f9908b8363dcc}{\index{J\-Page@{J\-Page}!build\-Css@{build\-Css}}
+\index{build\-Css@{build\-Css}!JPage@{J\-Page}}
+\subsubsection[{build\-Css}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Page\-::build\-Css (
+\begin{DoxyParamCaption}
+\item[{}]{\$prefix = {\ttfamily \char`\"{}\textbackslash{}t\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJPage_a4afc4f7b229e35977c4f9908b8363dcc}
+
+
+Build C\-S\-S links. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$prefix} & Place this string at the start of each line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+H\-T\-M\-L string 
+\end{DoxyReturn}
+\hypertarget{classJPage_ab87eaf4dc5fd15dd14e3b9d35734a7f4}{\index{J\-Page@{J\-Page}!build\-Js@{build\-Js}}
+\index{build\-Js@{build\-Js}!JPage@{J\-Page}}
+\subsubsection[{build\-Js}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Page\-::build\-Js (
+\begin{DoxyParamCaption}
+\item[{}]{\$prefix = {\ttfamily \char`\"{}\textbackslash{}t\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJPage_ab87eaf4dc5fd15dd14e3b9d35734a7f4}
+
+
+Build J\-S scripts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$prefix} & Place this string at the start of each line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+H\-T\-M\-L string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/will/\-Downloads/jframe-\/demo/jframe/lib/jpage.\-php\end{DoxyCompactItemize}

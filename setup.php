@@ -12,7 +12,8 @@ $JFRAME_SETTINGS = [
 	'path-img'		=> 'public/assets/img/',
 	'path-js'		=> 'public/assets/js/',
 
-	'path-url'		=> 'jframe/',
+	'path-url'		=> 'http://localhost/',
+	'path-url-sub'	=> 'jframe/',
 	'path-url-css'	=> 'assets/css/',
 	'path-url-img'	=> 'assets/img/',
 	'path-url-js'	=> 'assets/js/',
@@ -20,9 +21,14 @@ $JFRAME_SETTINGS = [
 	'path-lib'		=> 'script/lib/',
 	'path-headers'	=> 'script/headers/',
 	'path-pages'	=> 'script/pages/',
+	'path-partials'	=> 'script/partials/',
 	'path-footers'	=> 'script/footers/',
 
+	'page-default'	=> 'index',
+	'page-error'	=> 'error',
+
 	'timezone'		=> 'America/Denver',
+	'debug'			=> true,
 
 ];
 

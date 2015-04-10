@@ -63,8 +63,10 @@ if $setup_copied; then
 	read setting_mysql_pass
 	JBASH_IO_ask "MySQL Database"
 	read setting_mysql_db
-	JBASH_IO_ask "URL Prefix"
+	JBASH_IO_ask "Domain Base"
 	read setting_url
+	JBASH_IO_ask "URL Prefix"
+	read setting_url_sub
 	setting_url=$(JBASH_FORMAT_endslash $setting_url)
 	JBASH_IO_ask "Timezone"
 	read setting_timezone
@@ -73,6 +75,7 @@ if $setup_copied; then
 	sed -i.bak "s/__MYSQL_PASS__/$setting_mysql_pass/" "$setup_file"
 	sed -i.bak "s#__MYSQL_DB__#$setting_mysql_db#" "$setup_file"
 	sed -i.bak "s#__PATH_URL__#$setting_url#" "$setup_file"
+	sed -i.bak "s#__PATH_URL_SUB__#$setting_url_sub#" "$setup_file"
 	sed -i.bak "s#__TIMEZONE__#$setting_timezone#" "$setup_file"
 	rm "${setup_file}.bak"
 fi

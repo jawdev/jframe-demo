@@ -1,0 +1,143 @@
+\hypertarget{classJRequest}{\section{J\-Request Class Reference}
+\label{classJRequest}\index{J\-Request@{J\-Request}}
+}
+
+
+Static utility to analyze the request.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classJRequest_a115ed07fcb947770a6da19842b22c7a3}{G\-E\-T} (\$key, \$default=false)
+\begin{DoxyCompactList}\small\item\em Grab a \$\-\_\-\-G\-E\-T variable. \end{DoxyCompactList}\item 
+static \hyperlink{classJRequest_aa91e41f6bb2439b135af0c0ca9efe672}{P\-O\-S\-T} (\$key, \$default=false)
+\begin{DoxyCompactList}\small\item\em Grab a \$\-\_\-\-P\-O\-S\-T variable. \end{DoxyCompactList}\item 
+static \hyperlink{classJRequest_a4aa1f0dde5868f9782bf5a0269fcf699}{F\-I\-L\-E\-S} (\$key, \$default=null)
+\begin{DoxyCompactList}\small\item\em Grab a \$\-\_\-\-F\-I\-L\-E\-S variable. \end{DoxyCompactList}\item 
+static \hyperlink{classJRequest_a89a13c8cfb85ed2f879244cbf10db860}{A\-C\-T\-I\-O\-N} (\$index, \$default=null)
+\begin{DoxyCompactList}\small\item\em Grab an action segment by index. \end{DoxyCompactList}\item 
+static \hyperlink{classJRequest_a65785ba3995d7f0c9ad85d277b36f88d}{A\-N\-Y} (\$key, \$default=null)
+\begin{DoxyCompactList}\small\item\em Check all global request variables for a particular key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static utility to analyze the request. 
+
+Essentially provides a wrapper for \$\-\_\-\-G\-E\-T, \$\-\_\-\-P\-O\-S\-T, and \$\-\_\-\-F\-I\-L\-E\-S globals. Also used to grab the action segment of the U\-R\-L (\hyperlink{classJURL}{J\-U\-R\-L}). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classJRequest_a89a13c8cfb85ed2f879244cbf10db860}{\index{J\-Request@{J\-Request}!A\-C\-T\-I\-O\-N@{A\-C\-T\-I\-O\-N}}
+\index{A\-C\-T\-I\-O\-N@{A\-C\-T\-I\-O\-N}!JRequest@{J\-Request}}
+\subsubsection[{A\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Request\-::\-A\-C\-T\-I\-O\-N (
+\begin{DoxyParamCaption}
+\item[{}]{\$index, }
+\item[{}]{\$default = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJRequest_a89a13c8cfb85ed2f879244cbf10db860}
+
+
+Grab an action segment by index. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classJURL_a1555aaddcebdc3b13a327e6241c97dd6}{J\-U\-R\-L\-::get\-Action()} 
+\end{DoxySeeAlso}
+\hypertarget{classJRequest_a65785ba3995d7f0c9ad85d277b36f88d}{\index{J\-Request@{J\-Request}!A\-N\-Y@{A\-N\-Y}}
+\index{A\-N\-Y@{A\-N\-Y}!JRequest@{J\-Request}}
+\subsubsection[{A\-N\-Y}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Request\-::\-A\-N\-Y (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$default = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJRequest_a65785ba3995d7f0c9ad85d277b36f88d}
+
+
+Check all global request variables for a particular key. 
+
+
+\begin{DoxyEnumerate}
+\item Check \hyperlink{classJRequest_a4aa1f0dde5868f9782bf5a0269fcf699}{F\-I\-L\-E\-S()}
+\item Check \hyperlink{classJRequest_aa91e41f6bb2439b135af0c0ca9efe672}{P\-O\-S\-T()}
+\item Check \hyperlink{classJRequest_a115ed07fcb947770a6da19842b22c7a3}{G\-E\-T()}
+\item Check U\-R\-L\-::has\-Action() 
+\begin{DoxyParams}{Parameters}
+{\em \$key} & The array key or action string \\
+\hline
+{\em \$default} & If the variable cannot be found then return \$default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string or \$default 
+\end{DoxyReturn}
+
+\end{DoxyEnumerate}\hypertarget{classJRequest_a4aa1f0dde5868f9782bf5a0269fcf699}{\index{J\-Request@{J\-Request}!F\-I\-L\-E\-S@{F\-I\-L\-E\-S}}
+\index{F\-I\-L\-E\-S@{F\-I\-L\-E\-S}!JRequest@{J\-Request}}
+\subsubsection[{F\-I\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Request\-::\-F\-I\-L\-E\-S (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$default = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJRequest_a4aa1f0dde5868f9782bf5a0269fcf699}
+
+
+Grab a \$\-\_\-\-F\-I\-L\-E\-S variable. 
+
+Although you can certainly use the global \$\-\_\-\-F\-I\-L\-E\-S variable directly, this method makes sure the variable even exists. 
+\begin{DoxyParams}{Parameters}
+{\em \$key} & The array key for the \$\-\_\-\-F\-I\-L\-E\-S variable \\
+\hline
+{\em \$default} & If the \$\-\_\-\-F\-I\-L\-E\-S variable does not exist, return \$default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string or \$default 
+\end{DoxyReturn}
+\hypertarget{classJRequest_a115ed07fcb947770a6da19842b22c7a3}{\index{J\-Request@{J\-Request}!G\-E\-T@{G\-E\-T}}
+\index{G\-E\-T@{G\-E\-T}!JRequest@{J\-Request}}
+\subsubsection[{G\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Request\-::\-G\-E\-T (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$default = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJRequest_a115ed07fcb947770a6da19842b22c7a3}
+
+
+Grab a \$\-\_\-\-G\-E\-T variable. 
+
+Although you can certainly use the global \$\-\_\-\-G\-E\-T variable directly, this method makes sure the variable even exists. 
+\begin{DoxyParams}{Parameters}
+{\em \$key} & The array key for the \$\-\_\-\-G\-E\-T variable \\
+\hline
+{\em \$default} & If the \$\-\_\-\-G\-E\-T variable does not exist, return \$default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string or \$default 
+\end{DoxyReturn}
+\hypertarget{classJRequest_aa91e41f6bb2439b135af0c0ca9efe672}{\index{J\-Request@{J\-Request}!P\-O\-S\-T@{P\-O\-S\-T}}
+\index{P\-O\-S\-T@{P\-O\-S\-T}!JRequest@{J\-Request}}
+\subsubsection[{P\-O\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Request\-::\-P\-O\-S\-T (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$default = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJRequest_aa91e41f6bb2439b135af0c0ca9efe672}
+
+
+Grab a \$\-\_\-\-P\-O\-S\-T variable. 
+
+Although you can certainly use the global \$\-\_\-\-P\-O\-S\-T variable directly, this method makes sure the variable even exists. 
+\begin{DoxyParams}{Parameters}
+{\em \$key} & The array key for the \$\-\_\-\-P\-O\-S\-T variable \\
+\hline
+{\em \$default} & If the \$\-\_\-\-P\-O\-S\-T variable does not exist, return \$default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string or \$default 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/will/\-Downloads/jframe-\/demo/jframe/lib/jrequest.\-php\end{DoxyCompactItemize}

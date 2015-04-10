@@ -1,0 +1,115 @@
+\hypertarget{classJUtil}{\section{J\-Util Class Reference}
+\label{classJUtil}\index{J\-Util@{J\-Util}}
+}
+
+
+Utility functions.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classJUtil_a22d6f7d23be18309ff2aeef44016d996}{backtrace\-Object} (\$n=0)
+\begin{DoxyCompactList}\small\item\em Get an object from the backtrace. \end{DoxyCompactList}\item 
+static \hyperlink{classJUtil_a9380a3827cd535ca26dd975f9e678064}{b\-To\-Mb} (\$bytes, \$dec\-\_\-format=false)
+\begin{DoxyCompactList}\small\item\em Convert bytes to megabytes. \end{DoxyCompactList}\item 
+static \hyperlink{classJUtil_a608cdaf871165586627efaf67f1017a1}{git\-Hash} (\$file\-\_\-path)
+\begin{DoxyCompactList}\small\item\em Get the current git commit hash for a particular file. \end{DoxyCompactList}\item 
+static \hyperlink{classJUtil_a764089c0e54c1b10c1fd2c49a2ea31e9}{has\-Bit} (\$bitmask, \$bitcheck=0)
+\begin{DoxyCompactList}\small\item\em Check if a bitmask has a particular bit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classJUtil_a22d6f7d23be18309ff2aeef44016d996}{\index{J\-Util@{J\-Util}!backtrace\-Object@{backtrace\-Object}}
+\index{backtrace\-Object@{backtrace\-Object}!JUtil@{J\-Util}}
+\subsubsection[{backtrace\-Object}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Util\-::backtrace\-Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$n = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJUtil_a22d6f7d23be18309ff2aeef44016d996}
+
+
+Get an object from the backtrace. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$n} & The number of steps backwards to traverse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\hypertarget{classJUtil_a9380a3827cd535ca26dd975f9e678064}{\index{J\-Util@{J\-Util}!b\-To\-Mb@{b\-To\-Mb}}
+\index{b\-To\-Mb@{b\-To\-Mb}!JUtil@{J\-Util}}
+\subsubsection[{b\-To\-Mb}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Util\-::b\-To\-Mb (
+\begin{DoxyParamCaption}
+\item[{}]{\$bytes, }
+\item[{}]{\$dec\-\_\-format = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJUtil_a9380a3827cd535ca26dd975f9e678064}
+
+
+Convert bytes to megabytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$bytes} & The bytes to convert \\
+\hline
+{\em \$dec\-\_\-format} & The number of decimals to format to, if not provided, return the raw value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float or string 
+\end{DoxyReturn}
+\hypertarget{classJUtil_a608cdaf871165586627efaf67f1017a1}{\index{J\-Util@{J\-Util}!git\-Hash@{git\-Hash}}
+\index{git\-Hash@{git\-Hash}!JUtil@{J\-Util}}
+\subsubsection[{git\-Hash}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Util\-::git\-Hash (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\-\_\-path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJUtil_a608cdaf871165586627efaf67f1017a1}
+
+
+Get the current git commit hash for a particular file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$file\-\_\-path} & The full path to a file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classJUtil_a764089c0e54c1b10c1fd2c49a2ea31e9}{\index{J\-Util@{J\-Util}!has\-Bit@{has\-Bit}}
+\index{has\-Bit@{has\-Bit}!JUtil@{J\-Util}}
+\subsubsection[{has\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Util\-::has\-Bit (
+\begin{DoxyParamCaption}
+\item[{}]{\$bitmask, }
+\item[{}]{\$bitcheck = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJUtil_a764089c0e54c1b10c1fd2c49a2ea31e9}
+
+
+Check if a bitmask has a particular bit. 
+
+\begin{DoxyWarning}{Warning}
+If \$bitmask = 0 or \$bitcheck = 0, false is returned 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em \$bitmask} & The bitmask to check \\
+\hline
+{\em \$bitcheck} & The bits to compare the bitmask against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/will/\-Downloads/jframe-\/demo/jframe/lib/jutil.\-php\end{DoxyCompactItemize}

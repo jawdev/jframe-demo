@@ -1,0 +1,209 @@
+\hypertarget{classJURL}{\section{J\-U\-R\-L Class Reference}
+\label{classJURL}\index{J\-U\-R\-L@{J\-U\-R\-L}}
+}
+
+
+Static utility to parse and build U\-R\-Ls.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classJURL_aff846d42ceb57c64f3595e9998509c4a}{static \hyperlink{classJURL_aff846d42ceb57c64f3595e9998509c4a}{init} ()}\label{classJURL_aff846d42ceb57c64f3595e9998509c4a}
+
+\begin{DoxyCompactList}\small\item\em Load the U\-R\-L segments, called in /jframe.php. \end{DoxyCompactList}\item 
+static \hyperlink{classJURL_a21ea316b9cdbb77bbf942126900ccfbb}{get\-Base} ()
+\begin{DoxyCompactList}\small\item\em Get the base prefix of the current project U\-R\-L. \end{DoxyCompactList}\item 
+static \hyperlink{classJURL_a554d3e2f9b34ac8a24a47a29fe7be771}{get\-Segments} ()
+\begin{DoxyCompactList}\small\item\em Get all of the U\-R\-L segments. \end{DoxyCompactList}\item 
+static \hyperlink{classJURL_a345eac474d5e3a55a4ef004676021976}{get\-Segment} (\$index, \$default=false)
+\begin{DoxyCompactList}\small\item\em Get a particular U\-R\-L segment. \end{DoxyCompactList}\item 
+static \hyperlink{classJURL_a2ee2ef25880b30675a95be2905c627e4}{slice\-Actions} (\$index)
+\begin{DoxyCompactList}\small\item\em Called by \hyperlink{classJRouter}{J\-Router} to distinguise the core U\-R\-L segments from the action. \end{DoxyCompactList}\item 
+static \hyperlink{classJURL_a8215f13eb7bbc031d6444ee470bb6c7c}{get\-Actions} ()
+\begin{DoxyCompactList}\small\item\em Get all of the U\-R\-L actions. \end{DoxyCompactList}\item 
+static \hyperlink{classJURL_a1555aaddcebdc3b13a327e6241c97dd6}{get\-Action} (\$index=0, \$default=false)
+\begin{DoxyCompactList}\small\item\em Get a particular action string. \end{DoxyCompactList}\item 
+static \hyperlink{classJURL_af0d17fd5b03b7e6048f217499add15a2}{has\-Action} (\$str)
+\begin{DoxyCompactList}\small\item\em Checks to see if an action is present. \end{DoxyCompactList}\item 
+static \hyperlink{classJURL_aff7cc253497da4a3a9a628311ea7072c}{redir} (\$url=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Redirect to a page within the current project. \end{DoxyCompactList}\item 
+static \hyperlink{classJURL_afcfff41612ee61ffbb433c208f611728}{redir\-Out} (\$url)
+\begin{DoxyCompactList}\small\item\em Redirect to a page outside of the current project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static utility to parse and build U\-R\-Ls. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classJURL_a1555aaddcebdc3b13a327e6241c97dd6}{\index{J\-U\-R\-L@{J\-U\-R\-L}!get\-Action@{get\-Action}}
+\index{get\-Action@{get\-Action}!JURL@{J\-U\-R\-L}}
+\subsubsection[{get\-Action}]{\setlength{\rightskip}{0pt plus 5cm}static J\-U\-R\-L\-::get\-Action (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily 0}, }
+\item[{}]{\$default = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJURL_a1555aaddcebdc3b13a327e6241c97dd6}
+
+
+Get a particular action string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$index} & The index of the action \\
+\hline
+{\em \$default} & If the index has not been set, return \$default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string or \$default 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classJURL_a8215f13eb7bbc031d6444ee470bb6c7c}{get\-Actions()}, \hyperlink{classJURL_af0d17fd5b03b7e6048f217499add15a2}{has\-Action()}, \hyperlink{classJRequest_a89a13c8cfb85ed2f879244cbf10db860}{J\-Request\-::\-A\-C\-T\-I\-O\-N()} 
+\end{DoxySeeAlso}
+\hypertarget{classJURL_a8215f13eb7bbc031d6444ee470bb6c7c}{\index{J\-U\-R\-L@{J\-U\-R\-L}!get\-Actions@{get\-Actions}}
+\index{get\-Actions@{get\-Actions}!JURL@{J\-U\-R\-L}}
+\subsubsection[{get\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}static J\-U\-R\-L\-::get\-Actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJURL_a8215f13eb7bbc031d6444ee470bb6c7c}
+
+
+Get all of the U\-R\-L actions. 
+
+\begin{DoxyReturn}{Returns}
+array( string ) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classJURL_a1555aaddcebdc3b13a327e6241c97dd6}{get\-Action()}, \hyperlink{classJURL_af0d17fd5b03b7e6048f217499add15a2}{has\-Action()}, \hyperlink{classJRequest_a89a13c8cfb85ed2f879244cbf10db860}{J\-Request\-::\-A\-C\-T\-I\-O\-N()} 
+\end{DoxySeeAlso}
+\hypertarget{classJURL_a21ea316b9cdbb77bbf942126900ccfbb}{\index{J\-U\-R\-L@{J\-U\-R\-L}!get\-Base@{get\-Base}}
+\index{get\-Base@{get\-Base}!JURL@{J\-U\-R\-L}}
+\subsubsection[{get\-Base}]{\setlength{\rightskip}{0pt plus 5cm}static J\-U\-R\-L\-::get\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJURL_a21ea316b9cdbb77bbf942126900ccfbb}
+
+
+Get the base prefix of the current project U\-R\-L. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classJURL_a345eac474d5e3a55a4ef004676021976}{\index{J\-U\-R\-L@{J\-U\-R\-L}!get\-Segment@{get\-Segment}}
+\index{get\-Segment@{get\-Segment}!JURL@{J\-U\-R\-L}}
+\subsubsection[{get\-Segment}]{\setlength{\rightskip}{0pt plus 5cm}static J\-U\-R\-L\-::get\-Segment (
+\begin{DoxyParamCaption}
+\item[{}]{\$index, }
+\item[{}]{\$default = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJURL_a345eac474d5e3a55a4ef004676021976}
+
+
+Get a particular U\-R\-L segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$index} & The index of the segment \\
+\hline
+{\em \$default} & If the segment does not exist, return \$default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string or \$default 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classJURL_a554d3e2f9b34ac8a24a47a29fe7be771}{get\-Segments()} 
+\end{DoxySeeAlso}
+\hypertarget{classJURL_a554d3e2f9b34ac8a24a47a29fe7be771}{\index{J\-U\-R\-L@{J\-U\-R\-L}!get\-Segments@{get\-Segments}}
+\index{get\-Segments@{get\-Segments}!JURL@{J\-U\-R\-L}}
+\subsubsection[{get\-Segments}]{\setlength{\rightskip}{0pt plus 5cm}static J\-U\-R\-L\-::get\-Segments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJURL_a554d3e2f9b34ac8a24a47a29fe7be771}
+
+
+Get all of the U\-R\-L segments. 
+
+\begin{DoxyReturn}{Returns}
+array( string ) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classJURL_a345eac474d5e3a55a4ef004676021976}{get\-Segment()} 
+\end{DoxySeeAlso}
+\hypertarget{classJURL_af0d17fd5b03b7e6048f217499add15a2}{\index{J\-U\-R\-L@{J\-U\-R\-L}!has\-Action@{has\-Action}}
+\index{has\-Action@{has\-Action}!JURL@{J\-U\-R\-L}}
+\subsubsection[{has\-Action}]{\setlength{\rightskip}{0pt plus 5cm}static J\-U\-R\-L\-::has\-Action (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJURL_af0d17fd5b03b7e6048f217499add15a2}
+
+
+Checks to see if an action is present. 
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classJURL_a8215f13eb7bbc031d6444ee470bb6c7c}{get\-Actions()}, \hyperlink{classJURL_a1555aaddcebdc3b13a327e6241c97dd6}{get\-Action()}, \hyperlink{classJRequest_a89a13c8cfb85ed2f879244cbf10db860}{J\-Request\-::\-A\-C\-T\-I\-O\-N()} 
+\end{DoxySeeAlso}
+\hypertarget{classJURL_aff7cc253497da4a3a9a628311ea7072c}{\index{J\-U\-R\-L@{J\-U\-R\-L}!redir@{redir}}
+\index{redir@{redir}!JURL@{J\-U\-R\-L}}
+\subsubsection[{redir}]{\setlength{\rightskip}{0pt plus 5cm}static J\-U\-R\-L\-::redir (
+\begin{DoxyParamCaption}
+\item[{}]{\$url = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJURL_aff7cc253497da4a3a9a628311ea7072c}
+
+
+Redirect to a page within the current project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$url} & The U\-R\-L to redirect to within the project \\
+\hline
+\end{DoxyParams}
+\hypertarget{classJURL_afcfff41612ee61ffbb433c208f611728}{\index{J\-U\-R\-L@{J\-U\-R\-L}!redir\-Out@{redir\-Out}}
+\index{redir\-Out@{redir\-Out}!JURL@{J\-U\-R\-L}}
+\subsubsection[{redir\-Out}]{\setlength{\rightskip}{0pt plus 5cm}static J\-U\-R\-L\-::redir\-Out (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJURL_afcfff41612ee61ffbb433c208f611728}
+
+
+Redirect to a page outside of the current project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$url} & The complete U\-R\-L to redirect outside the project \\
+\hline
+\end{DoxyParams}
+\hypertarget{classJURL_a2ee2ef25880b30675a95be2905c627e4}{\index{J\-U\-R\-L@{J\-U\-R\-L}!slice\-Actions@{slice\-Actions}}
+\index{slice\-Actions@{slice\-Actions}!JURL@{J\-U\-R\-L}}
+\subsubsection[{slice\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}static J\-U\-R\-L\-::slice\-Actions (
+\begin{DoxyParamCaption}
+\item[{}]{\$index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJURL_a2ee2ef25880b30675a95be2905c627e4}
+
+
+Called by \hyperlink{classJRouter}{J\-Router} to distinguise the core U\-R\-L segments from the action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$index} & Where to slice the U\-R\-L segments array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array( string ) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/will/\-Downloads/jframe-\/demo/jframe/lib/jurl.\-php\end{DoxyCompactItemize}

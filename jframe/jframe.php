@@ -23,7 +23,14 @@ foreach( $JFRAME_SETTINGS as $key => $val ) {
 }
 
 //=====================================
-// paths
+// UTILS
+//=====================================
+
+define( 'JFRAME_DEBUG', $JFRAME_SETTINGS['debug'] );
+define( 'JFRAME_QS_URL', 'JFRAME_URL' );
+
+//=====================================
+// PATHS
 //=====================================
 
 define( 'JFRAME_PATH', dirname( __FILE__ ).'/' );
@@ -34,18 +41,23 @@ define( 'JFRAME_PATH_LOCAL', $JFRAME_SETTINGS['path'] );
 define( 'JFRAME_PATH_LOCAL_LIB', JFRAME_PATH_LOCAL.$JFRAME_SETTINGS['path-lib'] );
 define( 'JFRAME_PATH_LOCAL_HEADERS', JFRAME_PATH_LOCAL.$JFRAME_SETTINGS['path-headers'] );
 define( 'JFRAME_PATH_LOCAL_PAGES', JFRAME_PATH_LOCAL.$JFRAME_SETTINGS['path-pages'] );
+define( 'JFRAME_PATH_LOCAL_PARTIALS', JFRAME_PATH_LOCAL.$JFRAME_SETTINGS['path-partials'] );
 define( 'JFRAME_PATH_LOCAL_FOOTERS', JFRAME_PATH_LOCAL.$JFRAME_SETTINGS['path-footers'] );
 define( 'JFRAME_PATH_LOCAL_CSS', JFRAME_PATH_LOCAL.$JFRAME_SETTINGS['path-css'] );
 define( 'JFRAME_PATH_LOCAL_IMG', JFRAME_PATH_LOCAL.$JFRAME_SETTINGS['path-img'] );
 define( 'JFRAME_PATH_LOCAL_JS', JFRAME_PATH_LOCAL.$JFRAME_SETTINGS['path-js'] );
 
 define( 'JFRAME_PATH_LOCAL_URL', $JFRAME_SETTINGS['path-url'] );
-define( 'JFRAME_PATH_LOCAL_URL_CSS', $JFRAME_SETTINGS['path-url'].$JFRAME_SETTINGS['path-url-css'] );
-define( 'JFRAME_PATH_LOCAL_URL_IMG', $JFRAME_SETTINGS['path-url'].$JFRAME_SETTINGS['path-url-img'] );
-define( 'JFRAME_PATH_LOCAL_URL_JS', $JFRAME_SETTINGS['path-url'].$JFRAME_SETTINGS['path-url-js'] );
+define( 'JFRAME_PATH_LOCAL_URL_SUB', $JFRAME_SETTINGS['path-url-sub'] );
+define( 'JFRAME_PATH_LOCAL_URL_CSS', $JFRAME_SETTINGS['path-url-css'] );
+define( 'JFRAME_PATH_LOCAL_URL_IMG', $JFRAME_SETTINGS['path-url-img'] );
+define( 'JFRAME_PATH_LOCAL_URL_JS', $JFRAME_SETTINGS['path-url-js'] );
+
+define( 'JFRAME_PAGE_DEFAULT', $JFRAME_SETTINGS['page-default'] );
+define( 'JFRAME_PAGE_ERROR', $JFRAME_SETTINGS['page-error'] );
 
 //=====================================
-// autoloader
+// AUTOLOADER
 //=====================================
 
 function JFRAME_autoload_class( $classname ) {
@@ -58,10 +70,24 @@ function JFRAME_autoload_class( $classname ) {
 	if( $use_f2 ) $paths[] = JFRAME_PATH_LIB.$f2;
 	foreach( $paths as $p ) if( file_exists( $p ) ) return require_once( $p );
 	$msg = "[JFrame:FATAL] Class could not be found: $classname\n";
-	for( $i = 0; $i < count( $paths ); $i++ ) $msg .= "#$i: ".$paths[$i]."\n";
-	die( "<pre>$msg</pre>" );
+	for( $i = 0; $i < count( $paths ); $i++ ) $msg .= $paths[$i]."\n";
+	echo "<pre>$msg</pre>";
+	ob_start();
+	debug_print_backtrace();
+	$bt = ob_get_clean();
+	die( "<pre>$bt</pre>" );
 	return false;
 }
 spl_autoload_register( "JFRAME_autoload_class", false );
+
+
+//=====================================
+// INIT
+//=====================================
+
+JURL::init();
+JRouter::init();
+JPage::output();
+JDebug::output();
 
 ?>

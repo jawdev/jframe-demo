@@ -1,0 +1,279 @@
+\hypertarget{classJStatus}{\section{J\-Status Class Reference}
+\label{classJStatus}\index{J\-Status@{J\-Status}}
+}
+
+
+Used to hold status messages.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push} (\$\hyperlink{classJStatus_abf45c135b0e7a85afcc29f4e6170dede}{code}, \$\hyperlink{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}{message}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Push a \hyperlink{classJStatusEl}{J\-Status\-El} onto the stack. \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_a56f5e27a2d1ce9f37c33fd4f04957982}{incomplete} (\$\hyperlink{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}{message}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_a7da9c102991a4a5a873fa435e6820dae}{J\-Status\-::\-I\-N\-C\-O\-M\-P\-L\-E\-T\-E} message \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_ae8908e43cfb416ff30e6a06b039907cb}{fail} (\$\hyperlink{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}{message}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_a42def017ffd8cbba31196409472ae94b}{J\-Status\-::\-F\-A\-I\-L} message \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_a8cf0d53e8bd052ead9d755785f4e727f}{error} (\$\hyperlink{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}{message}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_adae6f9cc64c27ec125bbb36731a036c1}{J\-Status\-::\-E\-R\-R\-O\-R} message \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_a57ec832b91faf9ae63e080024a6f09cb}{none} (\$\hyperlink{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}{message}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_af4a8242bee3345146577233f7481d388}{J\-Status\-::\-N\-O\-N\-E} message \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_afa2f0cf6b735f15788353d3216fb8cbd}{ok} (\$\hyperlink{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}{message}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_a8c12f03c803b6e2dd4408a2fa8e19fb0}{J\-Status\-::\-O\-K} message \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_a40e18a7fc45b221189dddd13190f11a7}{success} (\$\hyperlink{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}{message}=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_a894a1602e2b9594efa57e1a146fde7fa}{J\-Status\-::\-S\-U\-C\-C\-E\-S\-S} message \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_a65c519fd5921f7b275aafe3c2e3c1f4e}{get} (\$index=false)
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{classJStatusEl}{J\-Status\-El} from the stack. \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}{message} (\$index=false)
+\begin{DoxyCompactList}\small\item\em Get a message from the stack. \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_abf45c135b0e7a85afcc29f4e6170dede}{code} (\$index=false)
+\begin{DoxyCompactList}\small\item\em Get a code from the stack. \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_a0be1b19e44183e6be4a53331b8108c67}{good} (\$index=false)
+\begin{DoxyCompactList}\small\item\em Check if a status code is $>$= 0. \end{DoxyCompactList}\item 
+static \hyperlink{classJStatus_abfddd8974fe4b9dfe7055f849e2df95c}{bad} (\$index=false)
+\begin{DoxyCompactList}\small\item\em Check if a status code is $<$ 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classJStatus_a7da9c102991a4a5a873fa435e6820dae}{const \hyperlink{classJStatus_a7da9c102991a4a5a873fa435e6820dae}{I\-N\-C\-O\-M\-P\-L\-E\-T\-E} = -\/3}\label{classJStatus_a7da9c102991a4a5a873fa435e6820dae}
+
+\begin{DoxyCompactList}\small\item\em There is missing data or the process could not finish. \end{DoxyCompactList}\item 
+\hypertarget{classJStatus_a42def017ffd8cbba31196409472ae94b}{const \hyperlink{classJStatus_a42def017ffd8cbba31196409472ae94b}{F\-A\-I\-L} = -\/2}\label{classJStatus_a42def017ffd8cbba31196409472ae94b}
+
+\begin{DoxyCompactList}\small\item\em The process failed. \end{DoxyCompactList}\item 
+\hypertarget{classJStatus_adae6f9cc64c27ec125bbb36731a036c1}{const \hyperlink{classJStatus_adae6f9cc64c27ec125bbb36731a036c1}{E\-R\-R\-O\-R} = -\/1}\label{classJStatus_adae6f9cc64c27ec125bbb36731a036c1}
+
+\begin{DoxyCompactList}\small\item\em There was an error while processing (most common) \end{DoxyCompactList}\item 
+\hypertarget{classJStatus_af4a8242bee3345146577233f7481d388}{const \hyperlink{classJStatus_af4a8242bee3345146577233f7481d388}{N\-O\-N\-E} = 0}\label{classJStatus_af4a8242bee3345146577233f7481d388}
+
+\begin{DoxyCompactList}\small\item\em No status. \end{DoxyCompactList}\item 
+\hypertarget{classJStatus_a8c12f03c803b6e2dd4408a2fa8e19fb0}{const \hyperlink{classJStatus_a8c12f03c803b6e2dd4408a2fa8e19fb0}{O\-K} = 1}\label{classJStatus_a8c12f03c803b6e2dd4408a2fa8e19fb0}
+
+\begin{DoxyCompactList}\small\item\em Bland form of \hyperlink{classJStatus_a894a1602e2b9594efa57e1a146fde7fa}{J\-Status\-::\-S\-U\-C\-C\-E\-S\-S}. \end{DoxyCompactList}\item 
+\hypertarget{classJStatus_a894a1602e2b9594efa57e1a146fde7fa}{const \hyperlink{classJStatus_a894a1602e2b9594efa57e1a146fde7fa}{S\-U\-C\-C\-E\-S\-S} = 2}\label{classJStatus_a894a1602e2b9594efa57e1a146fde7fa}
+
+\begin{DoxyCompactList}\small\item\em Every processed successfully. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classJStatus_a5f59651c62957f46bebf8bc1f1df9ecf}{static \hyperlink{classJStatus_a5f59651c62957f46bebf8bc1f1df9ecf}{\$elements} = \mbox{[}$\,$\mbox{]}}\label{classJStatus_a5f59651c62957f46bebf8bc1f1df9ecf}
+
+\begin{DoxyCompactList}\small\item\em Array stack of \hyperlink{classJStatusEl}{J\-Status\-El}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to hold status messages. 
+
+\hyperlink{classJStatus}{J\-Status} is used all over the framework, and is very useful when a more comprehensive return value is needed by a function. Often just true/false is not enough. With this class you can push a status, then subsequently poll the last status message. \begin{DoxyWarning}{Warning}
+The \hyperlink{classJStatus_af4a8242bee3345146577233f7481d388}{J\-Status\-::\-N\-O\-N\-E} constant returns true 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classJStatus_abfddd8974fe4b9dfe7055f849e2df95c}{\index{J\-Status@{J\-Status}!bad@{bad}}
+\index{bad@{bad}!JStatus@{J\-Status}}
+\subsubsection[{bad}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::bad (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_abfddd8974fe4b9dfe7055f849e2df95c}
+
+
+Check if a status code is $<$ 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$index} & The index of the \hyperlink{classJStatusEl}{J\-Status\-El} in the stack, if not set, use the latest element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean( code $<$ 0 ) 
+\end{DoxyReturn}
+\hypertarget{classJStatus_abf45c135b0e7a85afcc29f4e6170dede}{\index{J\-Status@{J\-Status}!code@{code}}
+\index{code@{code}!JStatus@{J\-Status}}
+\subsubsection[{code}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::code (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_abf45c135b0e7a85afcc29f4e6170dede}
+
+
+Get a code from the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$index} & The index of the \hyperlink{classJStatusEl}{J\-Status\-El} in the stack, if not set, use the latest element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classJStatus_a8cf0d53e8bd052ead9d755785f4e727f}{\index{J\-Status@{J\-Status}!error@{error}}
+\index{error@{error}!JStatus@{J\-Status}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::error (
+\begin{DoxyParamCaption}
+\item[{}]{\$message = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_a8cf0d53e8bd052ead9d755785f4e727f}
+
+
+\hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_adae6f9cc64c27ec125bbb36731a036c1}{J\-Status\-::\-E\-R\-R\-O\-R} message 
+
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+\hypertarget{classJStatus_ae8908e43cfb416ff30e6a06b039907cb}{\index{J\-Status@{J\-Status}!fail@{fail}}
+\index{fail@{fail}!JStatus@{J\-Status}}
+\subsubsection[{fail}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::fail (
+\begin{DoxyParamCaption}
+\item[{}]{\$message = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_ae8908e43cfb416ff30e6a06b039907cb}
+
+
+\hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_a42def017ffd8cbba31196409472ae94b}{J\-Status\-::\-F\-A\-I\-L} message 
+
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+\hypertarget{classJStatus_a65c519fd5921f7b275aafe3c2e3c1f4e}{\index{J\-Status@{J\-Status}!get@{get}}
+\index{get@{get}!JStatus@{J\-Status}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::get (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_a65c519fd5921f7b275aafe3c2e3c1f4e}
+
+
+Get a \hyperlink{classJStatusEl}{J\-Status\-El} from the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$index} & The index of the \hyperlink{classJStatusEl}{J\-Status\-El} in the stack, if not set, get the latest element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classJStatusEl}{J\-Status\-El} 
+\end{DoxyReturn}
+\hypertarget{classJStatus_a0be1b19e44183e6be4a53331b8108c67}{\index{J\-Status@{J\-Status}!good@{good}}
+\index{good@{good}!JStatus@{J\-Status}}
+\subsubsection[{good}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::good (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_a0be1b19e44183e6be4a53331b8108c67}
+
+
+Check if a status code is $>$= 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$index} & The index of the \hyperlink{classJStatusEl}{J\-Status\-El} in the stack, if not set, use the latest element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean( code $>$= 0 ) 
+\end{DoxyReturn}
+\hypertarget{classJStatus_a56f5e27a2d1ce9f37c33fd4f04957982}{\index{J\-Status@{J\-Status}!incomplete@{incomplete}}
+\index{incomplete@{incomplete}!JStatus@{J\-Status}}
+\subsubsection[{incomplete}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::incomplete (
+\begin{DoxyParamCaption}
+\item[{}]{\$message = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_a56f5e27a2d1ce9f37c33fd4f04957982}
+
+
+\hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_a7da9c102991a4a5a873fa435e6820dae}{J\-Status\-::\-I\-N\-C\-O\-M\-P\-L\-E\-T\-E} message 
+
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+\hypertarget{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}{\index{J\-Status@{J\-Status}!message@{message}}
+\index{message@{message}!JStatus@{J\-Status}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::message (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_aaae0b2dc83cdb147d18af1aa65abd353}
+
+
+Get a message from the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$index} & The index of the \hyperlink{classJStatusEl}{J\-Status\-El} in the stack, if not set, use the latest element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classJStatus_a57ec832b91faf9ae63e080024a6f09cb}{\index{J\-Status@{J\-Status}!none@{none}}
+\index{none@{none}!JStatus@{J\-Status}}
+\subsubsection[{none}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::none (
+\begin{DoxyParamCaption}
+\item[{}]{\$message = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_a57ec832b91faf9ae63e080024a6f09cb}
+
+
+\hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_af4a8242bee3345146577233f7481d388}{J\-Status\-::\-N\-O\-N\-E} message 
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+\hypertarget{classJStatus_afa2f0cf6b735f15788353d3216fb8cbd}{\index{J\-Status@{J\-Status}!ok@{ok}}
+\index{ok@{ok}!JStatus@{J\-Status}}
+\subsubsection[{ok}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::ok (
+\begin{DoxyParamCaption}
+\item[{}]{\$message = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_afa2f0cf6b735f15788353d3216fb8cbd}
+
+
+\hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_a8c12f03c803b6e2dd4408a2fa8e19fb0}{J\-Status\-::\-O\-K} message 
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+\hypertarget{classJStatus_a4dfe11792482154033e973f8e595eb88}{\index{J\-Status@{J\-Status}!push@{push}}
+\index{push@{push}!JStatus@{J\-Status}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::push (
+\begin{DoxyParamCaption}
+\item[{}]{\$code, }
+\item[{}]{\$message = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_a4dfe11792482154033e973f8e595eb88}
+
+
+Push a \hyperlink{classJStatusEl}{J\-Status\-El} onto the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$code} & The \hyperlink{classJStatus}{J\-Status} code constant \\
+\hline
+{\em \$message} & The message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$boolean( \$code $>$= 0 ) 
+\end{DoxyReturn}
+\hypertarget{classJStatus_a40e18a7fc45b221189dddd13190f11a7}{\index{J\-Status@{J\-Status}!success@{success}}
+\index{success@{success}!JStatus@{J\-Status}}
+\subsubsection[{success}]{\setlength{\rightskip}{0pt plus 5cm}static J\-Status\-::success (
+\begin{DoxyParamCaption}
+\item[{}]{\$message = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classJStatus_a40e18a7fc45b221189dddd13190f11a7}
+
+
+\hyperlink{classJStatus_a4dfe11792482154033e973f8e595eb88}{push()} a \hyperlink{classJStatus_a894a1602e2b9594efa57e1a146fde7fa}{J\-Status\-::\-S\-U\-C\-C\-E\-S\-S} message 
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/will/\-Downloads/jframe-\/demo/jframe/lib/status.\-php\end{DoxyCompactItemize}

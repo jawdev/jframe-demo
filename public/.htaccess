@@ -1,4 +1,4 @@
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ /jframe/index.php?JFRAME_URI=$1 [QSA,L]
+RewriteRule ^(.*)$ /jframe/index.php?JFRAME_URL=$1 [QSA,L]
 php_flag display_errors on

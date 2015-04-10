@@ -13,6 +13,7 @@ $JFRAME_SETTINGS = [
 	'path-js'		=> 'public/assets/js/',
 
 	'path-url'		=> '__PATH_URL__',
+	'path-url-sub'	=> '__PATH_URL_SUB__',
 	'path-url-css'	=> 'assets/css/',
 	'path-url-img'	=> 'assets/img/',
 	'path-url-js'	=> 'assets/js/',
@@ -23,6 +24,7 @@ $JFRAME_SETTINGS = [
 	'path-footers'	=> 'script/footers/',
 
 	'timezone'		=> '__TIMEZONE__',
+	'debug'			=> true,
 
 ];
 
